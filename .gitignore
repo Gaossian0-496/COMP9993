@@ -1,0 +1,35 @@
+# Datasets, third-party models and run output are not part of this repository.
+dataset/
+scscore/
+results/
+*.pkl
+*.pt
+*.bin
+*.safetensors
+
+# Run artefacts
+*.done
+*.status.json
+*.ckpt.pkl
+results_planning_*.yaml
+*.jsonl
+*.log
+tensorboard/
+
+# Skill stores (supply your own; see README)
+skill_memory*.json
+skill_library*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Environment / editor
+venv/
+.venv/
+.env
+.DS_Store
+*.swp
+*~

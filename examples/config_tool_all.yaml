@@ -1,0 +1,91 @@
+# TOOL-ALL: the full tool set, site-agnostic.
+#
+# The arm reported as "tool-all": same search, budget and tool set as the cluster config it was run
+# with, with every machine-specific path removed. Nothing here names a scheduler, filesystem or user.
+#
+# RUN:
+#     python main.py --method planning --config_default examples/config_tool_all.yaml \
+#         --dataset_name pistachio_hard --port <port> --output_dir <dir> --workers <n>
+#
+# THE FOUR TOOL BLOCKS, and what each hands the planner:
+#   cut_tool       get_known_splits_of_this_molecule -- corpus splits of THIS molecule, ranked by
+#                  largest remaining piece and capped at 0.9 of it
+#   mine_tool      how_is_this_made -- how each motif is MADE: how often the corpus involves it, what
+#                  its precursors carry over background, whether anything closes its ring systems
+#   check_tool     validate_route -- the route checker applied to the model's own proposed step
+#   validate_tool  check_my_route (FORMAT only) and my_rejected_steps (this molecule's rejected first
+#                  steps with the reason each was refused)
+#
+# LEAKAGE: no tool returns an oracle-suggested disconnection, and none reveals purchasability
+# (cut_tool.show_buyable is false) -- purchasability is the oracle's own termination test.
+#
+# ONE EXTERNAL FILE: aot.skill_library names a skill library that is NOT in this repository. Supply a
+# file of that name, or set skill_repair/skill_gate to false and skill_library to null to run the tool
+# arm without the skill path. Everything else here is self-contained.
+llm:
+  backend: sglang
+  enable_thinking: false
+  context_length: 131072
+  # The longest successful answer measured was 18,028 tokens (p99 ~15k); beyond this a generation is
+  # a repetition runaway, which previously burned 10-30 min per call in silent client timeouts.
+  max_tokens: 20480
+  model_name: Qwen/Qwen3.5-27B     # a model id or local path; must match what the server serves
+  multimodal: false
+  server_url: http://127.0.0.1:30001/v1   # --port on the command line overrides the port
+  top_p: 0.95
+  top_k: 20
+  presence_penalty: 1.5            # the model card's anti-repetition penalty
+offspring_size: 5
+population_size: 10
+run_mode: A
+max_init_retries: 15
+max_evolution_iters: 200
+# Per-molecule wall-clock cap, cumulative across restarts via the checkpoint. Without it a worker
+# never abandons a molecule and grinds until the scheduler kills the job.
+attempt_time_limit_hours: 24.0
+search: aot
+aot:
+  llm_call_budget: 250        # every LLM call counts: root, expansions and retries
+  c_param: 0.5                # UCB exploration
+  unsolved_penalty: 0.3       # UCB / (1 + path_burden * this)
+  max_depth: 20
+  max_reexpansions: 5
+  num_initial_routes: 3
+  max_expansion_retries: 5
+  max_root_retries: 8
+  backprop: average
+  salvage: true               # the released code's drift repair
+  tried_note: true            # list reactions already in the tree for this molecule
+  validate_tool:
+    enabled: true
+  check_tool:
+    enabled: true
+    max_iters: 6
+  skill_repair: true          # NEEDS aot.skill_library; see "ONE EXTERNAL FILE" above
+  skill_library: skill_library_pg_v2.json
+  skill_gate: true            # deterministic RDKit substructure gates
+  skill_fixed_k: 5            # every gate-passing skill is added with NO LLM call
+  skill_max: 5                # the selector may add up to 5 more from the rest of the library
+  skill_rotate: true
+  skill_menu: library
+  mine_tool:
+    enabled: true
+    wording: stuck            # gated description, matching cut_tool.wording
+    derive_skills: true       # WRITE-ONLY: runs after the molecule is scored, outside the budget,
+                              # appends to <output_dir>/derived_skills.jsonl, never read back in the
+                              # same run, so the search is identical to the no-derivation arm.
+    max_new_skills: 40
+    dedupe_motifs: false      # allow several skills per rare motif, merged later
+  cut_tool:
+    enabled: true
+    max_piece: 0.9
+    show: 5
+    check_max: 60
+    scope: self               # no-argument form: the tool scopes itself to the current molecule
+    wording: stuck
+    show_buyable: false       # purchasability withheld: it is the oracle's termination test
+canonical_product_match: true      # same molecule, different SMILES spelling -> matched
+prefer_model_reactants: true       # keep the model's outcome when the template reproduces it
+prefer_reproducing_template: true  # template choice: correct routes fully valid 50% -> 86.5%
+min_remaining: 0                   # no tail stop
+rag_top_k: 50                      # sample RAG examples only among the 50 nearest routes

@@ -1,0 +1,21 @@
+# Versions are those the reported runs were produced with (Python 3.10.8).
+# Pinned rather than floated because rdkit and rdchiral change template matching
+# between releases, which changes which steps the oracle accepts.
+
+rdkit==2023.9.6
+rdchiral==1.1.0
+syntheseus==0.7.2
+PyTDC==1.1.15
+numpy==1.26.4
+pandas==2.3.3
+PyYAML==6.0.1
+joblib==1.5.3
+tqdm==4.67.3
+torch==2.9.1
+openai==2.6.1
+
+# Not listed, and not required:
+#   scscore    - third-party model, see README ("Requirements")
+#   sascorer   - imported lazily; only needed if SA scoring is switched on
+#   azure-ai-inference - only for the Azure backend in llm_backend.py
+#   tensorboard - optional; main.py degrades gracefully without it
