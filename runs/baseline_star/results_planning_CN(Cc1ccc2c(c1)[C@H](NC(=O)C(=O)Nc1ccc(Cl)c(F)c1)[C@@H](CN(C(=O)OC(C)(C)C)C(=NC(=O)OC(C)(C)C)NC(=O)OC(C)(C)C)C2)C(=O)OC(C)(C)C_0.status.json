@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "termination": "found_pass",
+  "passed": true,
+  "search": "aot",
+  "llm_calls": 124,
+  "llm_call_budget": 250,
+  "pass_steps": 124,
+  "n_routes": 114,
+  "tree": {
+    "molecules": 143,
+    "reactions": 114,
+    "frontier": 0,
+    "solved_molecules": 68,
+    "dead": 2
+  },
+  "fix_stats": {
+    "spelling_fixed": 0,
+    "tmpl_lookups": 134,
+    "tmpl_fix_changed": 14,
+    "tmpl_no_reproducer": 74,
+    "spelling_fixed_after_repair": 22,
+    "tried_note_used": 67
+  },
+  "n_attempts": 1,
+  "solved_on_attempt": 1,
+  "completed_at": "2026-11-16T00:20:11Z",
+  "pid": 2665778
+}

@@ -1,0 +1,30 @@
+? '{"molecule": "COc1ccc(C(O[C@H]2C(F)(F)[C@H](n3ccc(N)nc3=O)O[C@]2(CCl)CO[Si](C)(C)C(C)(C)C)(c2ccccc2)c2ccccc2)cc1",
+  "reactants": [{"molecule": "CC(C)(C)[Si](C)(C)OC[C@@]1(CCl)O[C@@H](n2ccc(N)nc2=O)C(F)(F)[C@@H]1O",
+  "reactants": [{"molecule": "Nc1ccn([C@@H]2O[C@@](CO)(CCl)[C@@H](O)C2(F)F)c(=O)n1",
+  "reactants": [{"molecule": "Nc1cc[nH]c(=O)n1", "type": "building_block"}, {"molecule":
+  "OC[C@@]1(CCl)OC(Br)C(F)(F)[C@@H]1O", "reactants": [{"molecule": "CC(O)[C@@]1(CCl)OC(Br)C(F)(F)[C@@H]1O",
+  "reactants": [{"molecule": "CC(O)[C@](O)(CCl)[C@@H](O)C(F)(F)C(Br)I", "reactants":
+  [{"molecule": "CC(O)C(=CC(F)(F)C(Br)I)CCl", "reactants": [{"molecule": "[Li]CC(F)(F)C(Br)I",
+  "reactants": [{"molecule": "BrBr", "type": "building_block"}, {"molecule": "[Li]CC(F)(F)CI",
+  "reactants": [{"molecule": "F", "type": "building_block"}, {"molecule": "[F-]",
+  "type": "building_block"}, {"molecule": "[Li]CC(=O)CI", "reactants": [{"molecule":
+  "II", "type": "building_block"}, {"molecule": "[Li]CC(C)=O", "reactants": [{"molecule":
+  "CC(=O)O", "type": "building_block"}, {"molecule": "[Li]CCC", "type": "building_block"}],
+  "reaction": "[C:2]-[C&H0&D3&+0:3](-[C:4])=[O&H0&D1&+0:1]>>C-C(-O)=[O&H0&D1&+0:1].[C:2]-[C&H2&D2&+0:3]-[C:4]",
+  "type": "reaction"}], "reaction": "[I&H0&D1&+0:1]-[C&H2&D2&+0:2]-[C:3]=[O&D1&H0:4]>>I-[I&H0&D1&+0:1].[C&H3&D1&+0:2]-[C:3]=[O&D1&H0:4]",
+  "type": "reaction"}], "reaction": "[C:2]-[C&H0&D4&+0:1](-[C:3])(-[F&H0&D1&+0:5])-[F&H0&D1&+0:4]>>O=[C&H0&D3&+0:1](-[C:2])-[C:3].[F&-&H0&D0:4].[F&H1&D0&+0:5]",
+  "type": "reaction"}], "reaction": "[Br&H0&D1&+0:1]-[C&H1&D3&+0:3](-[C:2])-[I&D1&H0:4]>>Br-[Br&H0&D1&+0:1].[C:2]-[C&H2&D2&+0:3]-[I&D1&H0:4]",
+  "type": "reaction"}, {"molecule": "CC(O)C(=O)CCl", "type": "building_block"}], "reaction":
+  "[C:4]-[C&H1&D2&+0:5]=[C&H0&D3&+0:1](-[C:2])-[C:3]>>O=[C&H0&D3&+0:1](-[C:2])-[C:3].[C:4]-[C&H2&D2&+0:5]-[#3]",
+  "type": "reaction"}, {"molecule": "C[N+]1([O-])CCOCC1", "type": "building_block"},
+  {"molecule": "O", "type": "building_block"}], "reaction": "[C:2]-[C@&H1&D3&+0:3](-[O&H1&D1&+0:7])-[C@&H0&D4&+0:4](-[C:5])(-[C:6])-[O&H1&D1&+0:1]>>C-[N&+]1(-[O&-])-C-C-[O&H0&D2&+0:1]-C-C-1.[C:2]-[C&H1&D2&+0:3]=[C&H0&D3&+0:4](-[C:5])-[C:6].[O&H2&D0&+0:7]",
+  "type": "reaction"}], "reaction": "[CH;+0:1]-[O;H0;+0:2]>>I-[CH;+0:1].[OH;+0:2]",
+  "type": "reaction"}], "reaction": "[#8:2]-[C&H2&D2&+0:1]-[C:3]>>C-[C&H1&D3&+0:1](-[#8:2])-[C:3]",
+  "type": "reaction"}], "reaction": "[#7&a:4]:[c:5]:[n&H0&D3&+0:6](:[c:7])-[C@&H1&D3&+0:1](-[#8:2])-[C:3]>>Br-[C&H1&D3&+0:1](-[#8:2])-[C:3].[#7&a:4]:[c:5]:[n&H1&D2&+0:6]:[c:7]",
+  "type": "reaction"}, {"molecule": "CC(C)(C)[Si](C)(C)Cl", "type": "building_block"}],
+  "reaction": "[C:5]-[O&H0&D2&+0:6]-[#14&H0&D4&+0:1](-[C:2])(-[C&D1&H3:3])-[C&D1&H3:4]>>Cl-[#14&H0&D4&+0:1](-[C:2])(-[C&D1&H3:3])-[C&D1&H3:4].[C:5]-[O&H1&D1&+0:6]",
+  "type": "reaction"}, {"molecule": "COc1ccc(C(O)(c2ccccc2)c2ccccc2)cc1", "type":
+  "building_block"}], "reaction": "[C:2]-[C@&H1&D3&+0:1](-[C:3])-[O&H0&D2&+0:5]-[C:4]>>O-[C@&H1&D3&+0:1](-[C:2])-[C:3].[C:4]-[O&H1&D1&+0:5]",
+  "type": "reaction"}'
+: - 0.0
+  - 53

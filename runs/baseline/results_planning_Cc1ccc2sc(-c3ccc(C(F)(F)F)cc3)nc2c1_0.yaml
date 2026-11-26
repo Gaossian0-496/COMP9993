@@ -1,0 +1,6 @@
+? '{"molecule": "Cc1ccc2sc(-c3ccc(C(F)(F)F)cc3)nc2c1", "reactants": [{"molecule":
+  "O=Cc1ccc(C(F)(F)F)cc1", "type": "building_block"}, {"molecule": "Cc1ccc(S)c(N)c1",
+  "type": "building_block"}], "reaction": "[c:3]:[c&H0&D3&+0:2](:[c:4])-[c&H0&D3&+0:1]1:[n&H0&D2&+0:5]:[c:6]:[c:7]:[s&H0&D2&+0:8]:1>>O=[C&H1&D2&+0:1]-[c&H0&D3&+0:2](:[c:3]):[c:4].[N&H2&D1&+0:5]-[c:6]:[c:7]-[S&H1&D1&+0:8]",
+  "type": "reaction"}'
+: - 0.0
+  - 4

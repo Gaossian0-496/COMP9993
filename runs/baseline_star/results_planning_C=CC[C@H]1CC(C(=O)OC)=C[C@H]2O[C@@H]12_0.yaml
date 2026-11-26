@@ -1,0 +1,21 @@
+? '{"molecule": "C=CC[C@H]1CC(C(=O)OC)=C[C@H]2O[C@@H]12", "reactants": [{"molecule":
+  "C=CCC1=CC(C(=O)OC)=C[C@H]2O[C@@H]12", "reactants": [{"molecule": "C=CCC1=CC(C(=O)O)=C[C@H]2O[C@@H]12",
+  "reactants": [{"molecule": "C=CCC(=CC(=C)C(=O)O)[C@@H]1O[C@@H]1C=C", "reactants":
+  [{"molecule": "COCOC", "type": "building_block"}, {"molecule": "C=CCC(=CCC(=O)O)[C@@H]1O[C@@H]1C=C",
+  "reactants": [{"molecule": "C=CCC(=C)[C@@H]1O[C@@H]1C=C", "reactants": [{"molecule":
+  "O=C(OO)c1cccc(Cl)c1", "type": "building_block"}, {"molecule": "C=CC=CC(=C)CC=C",
+  "reactants": [{"molecule": "C=CC=C", "type": "building_block"}, {"molecule": "C=CCC(=C)C=C",
+  "reactants": [{"molecule": "C=CCC(C)C=C", "type": "building_block"}], "reaction":
+  "[C:1]-[C&H0&D3&+0:2](=[C&H2&D1&+0:3])-[C:4]-[C:5]=[C:6]>>[C:1]-[C&H1&D3&+0:2](-[C&H3&D1&+0:3])-[C:4]-[C:5]=[C:6]",
+  "type": "reaction"}], "reaction": "[C:2]-[C&H1&D2&+0:1]=[C&H1&D2&+0:3]-[C:4]>>C=[C&H1&D2&+0:1]-[C:2].C=[C&H1&D2&+0:3]-[C:4]",
+  "type": "reaction"}], "reaction": "[C:2]=[C:3]-[C@&H1&D3&+0:4]1-[O&H0&D2&+0:1]-[C@&H1&D3&+0:5]-1-[C:6]>>Cl-c1:c:c:c:c(-C(=[O&H0&D1&+0:1])-O-O):c:1.[C:2]=[C:3]-[C&H1&D2&+0:4]=[C&H1&D2&+0:5]-[C:6]",
+  "type": "reaction"}, {"molecule": "C=CCC(=O)O", "type": "building_block"}], "reaction":
+  "[C:2]-[C&H2&D2&+0:1]-[C&H1&D2&+0:4]=[C:3]>>C=C-[C&H2&D2&+0:1]-[C:2].[C:3]=[C&H2&D1&+0:4]",
+  "type": "reaction"}], "reaction": "[C:2]=[C:3]-[C&H0&D3&+0:4](-[C:5])=[C&H2&D1&+0:1]>>C-O-C-O-[C&H3&D1&+0:1].[C:2]=[C:3]-[C&H2&D2&+0:4]-[C:5]",
+  "type": "reaction"}], "reaction": "[C:5]-[C&H1&D2&+0:4]=[C&H0&D3&+0:1](-[C:2])-[C:3]>>C=[C&H0&D3&+0:1](-[C:2])-[C:3].C=[C&H1&D2&+0:4]-[C:5]",
+  "type": "reaction"}, {"molecule": "C[C@@H](N)c1ccccc1", "type": "building_block"}],
+  "reaction": "[C&H3&D1&+0:1]-[O&H0&D2&+0:4]-[C:3]=[O&D1&H0:2]>>C-[C@@&H1](-N)-[c&H0&D3&+0:1]1:c:c:c:c:c:1.[O&D1&H0:2]=[C:3]-[O&H1&D1&+0:4]",
+  "type": "reaction"}], "reaction": "[C:1]-[C&H2&D2&+0:2]-[C@&H1&D3&+0:3](-[C:4])-[C:5]>>[C:1]-[C&H1&D2&+0:2]=[C&H0&D3&+0:3](-[C:4])-[C:5]",
+  "type": "reaction"}'
+: - 0.0
+  - 74

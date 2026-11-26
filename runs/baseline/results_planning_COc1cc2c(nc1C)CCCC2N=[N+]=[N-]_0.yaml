@@ -1,0 +1,8 @@
+? '{"molecule": "COc1cc2c(nc1C)CCCC2N=[N+]=[N-]", "reactants": [{"molecule": "CO",
+  "type": "building_block"}, {"molecule": "Cc1ccc2c(n1)CCCC2N=[N+]=[N-]", "reactants":
+  [{"molecule": "Cc1ccc2c(n1)CCCC2Br", "type": "building_block"}, {"molecule": "[N-]=[N+]=[N-]",
+  "type": "building_block"}], "reaction": "[C:2]-[C&H1&D3&+0:1](-[c:3])-[N&H0&D2&+0:4]=[#7&+:5]=[N&-&D1&H0:6]>>Br-[C&H1&D3&+0:1](-[C:2])-[c:3].[N&-&H0&D1:4]=[#7&+:5]=[N&-&D1&H0:6]",
+  "type": "reaction"}], "reaction": "[C:1]-[O&H0&D2&+0:2]-[c&H0&D3&+0:4](:[c:3]):[c:5]>>[C:1]-[O&H1&D1&+0:2].[c:3]:[c&H1&D2&+0:4]:[c:5]",
+  "type": "reaction"}'
+: - 0.0
+  - 14

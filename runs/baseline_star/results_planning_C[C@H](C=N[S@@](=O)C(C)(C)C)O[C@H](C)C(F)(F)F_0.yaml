@@ -1,0 +1,10 @@
+? '{"molecule": "C[C@H](/C=N/[S@@](=O)C(C)(C)C)O[C@H](C)C(F)(F)F", "reactants": [{"molecule":
+  "CC(C)(C)S(N)=O", "type": "building_block"}, {"molecule": "C[C@H](C=O)O[C@H](C)C(F)(F)F",
+  "reactants": [{"molecule": "C[C@H](CO)O[C@H](C)C(F)(F)F", "reactants": [{"molecule":
+  "C[C@@H](O)CO", "type": "building_block"}, {"molecule": "C[C@H](O)C(F)(F)F", "type":
+  "building_block"}], "reaction": "[C:2]-[C@&H1&D3&+0:1](-[C:3])-[O&H0&D2&+0:5]-[C:4]>>O-[C@@&H1&D3&+0:1](-[C:2])-[C:3].[C:4]-[O&H1&D1&+0:5]",
+  "type": "reaction"}], "reaction": "[C:1]-[C&H1&D2&+0:2]=[O&H0&D1&+0:3]>>[C:1]-[C&H2&D2&+0:2]-[O&H1&D1&+0:3]",
+  "type": "reaction"}], "reaction": "[#16:3]/[N&H0&D2&+0:4]=[C&H1&D2&+0:1]/[C:2]>>O=[C&H1&D2&+0:1]-[C:2].[#16:3]-[N&H2&D1&+0:4]",
+  "type": "reaction"}'
+: - 0.0
+  - 8

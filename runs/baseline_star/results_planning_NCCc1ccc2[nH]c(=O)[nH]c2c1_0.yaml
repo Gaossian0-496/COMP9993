@@ -1,0 +1,6 @@
+? '{"molecule": "NCCc1ccc2[nH]c(=O)[nH]c2c1", "reactants": [{"molecule": "NC(N)=O",
+  "type": "building_block"}, {"molecule": "NCCc1ccc(N)c(N)c1", "type": "building_block"}],
+  "reaction": "[O&D1&H0:2]=[c&H0&D3&+0:1]1:[n&H1&D2&+0:3]:[c:4]:[c:5]:[n&H1&D2&+0:6]:1>>N-[C&H0&D3&+0:1](-N)=[O&D1&H0:2].[N&H2&D1&+0:3]-[c:4]:[c:5]-[N&H2&D1&+0:6]",
+  "type": "reaction"}'
+: - 0.0
+  - 3

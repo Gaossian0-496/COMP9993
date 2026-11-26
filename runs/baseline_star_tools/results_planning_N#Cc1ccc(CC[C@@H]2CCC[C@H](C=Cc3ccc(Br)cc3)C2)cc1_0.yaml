@@ -1,0 +1,8 @@
+? '{"molecule": "N#Cc1ccc(CC[C@@H]2CCC[C@H](/C=C/c3ccc(Br)cc3)C2)cc1", "reactants":
+  [{"molecule": "N#Cc1ccc(C=O)cc1", "type": "building_block"}, {"molecule": "C[C@@H]1CCC[C@H](/C=C/c2ccc(Br)cc2)C1",
+  "reactants": [{"molecule": "C[C@@H]1CCC[C@H](C)C1", "type": "building_block"}, {"molecule":
+  "O=Cc1ccc(Br)cc1", "type": "building_block"}], "reaction": "[C:3]/[C&H1&D2&+0:4]=[C&H1&D2&+0:1]/[c:2]>>O=[C&H1&D2&+0:1]-[c:2].[C:3]-[C&H3&D1&+0:4]",
+  "type": "reaction"}], "reaction": "[C:3]-[C&H2&D2&+0:4]-[C&H2&D2&+0:1]-[c:2]>>O=[C&H1&D2&+0:1]-[c:2].[C:3]-[C&H3&D1&+0:4]",
+  "type": "reaction"}'
+: - 0.0
+  - 3

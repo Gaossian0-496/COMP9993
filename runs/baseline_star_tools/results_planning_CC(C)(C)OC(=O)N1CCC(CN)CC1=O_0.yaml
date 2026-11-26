@@ -1,0 +1,6 @@
+? '{"molecule": "CC(C)(C)OC(=O)N1CCC(CN)CC1=O", "reactants": [{"molecule": "CC(C)(C)OC(=O)CBr",
+  "type": "building_block"}, {"molecule": "NCC1CCNC(=O)C1", "type": "building_block"}],
+  "reaction": "[#8:2]-[C&H0&D3&+0:1](=[O&D1&H0:3])-[N&H0&D3&+0:5](-[C:4])-[C:6]>>Br-C-[C&H0&D3&+0:1](-[#8:2])=[O&D1&H0:3].[C:4]-[N&H1&D2&+0:5]-[C:6]",
+  "type": "reaction"}'
+: - 0.0
+  - 3

@@ -1,0 +1,21 @@
+? '{"molecule": "C=CC(=O)OCCOCCOCCOc1ccc(OC(=O)C2CCC(C(=O)Oc3ccc(C4CCC(CCC)CC4)cc3C=NNc3nc4ccccc4s3)CC2)cc1",
+  "reactants": [{"molecule": "C=CC(=O)OCCOCCOCCOc1ccc(OC(=O)C2CCC(O)CC2)cc1", "reactants":
+  [{"molecule": "C=CC(=O)OCCOCCOCCOc1ccc(O)cc1", "reactants": [{"molecule": "Oc1ccc(OCCBr)cc1",
+  "type": "building_block"}, {"molecule": "C=CC(=O)OCCOCCO", "reactants": [{"molecule":
+  "C=CC(=O)O", "type": "building_block"}, {"molecule": "OCCOCCO", "type": "building_block"}],
+  "reaction": "[C:2]-[C&H2&D2&+0:1]-[O&H0&D2&+0:5]-[C:4]=[O&D1&H0:3]>>O-[C&H2&D2&+0:1]-[C:2].[O&D1&H0:3]=[C:4]-[O&H1&D1&+0:5]",
+  "type": "reaction"}], "reaction": "[C:2]-[C&H2&D2&+0:1]-[O&H0&D2&+0:4]-[C:3]>>Br-[C&H2&D2&+0:1]-[C:2].[C:3]-[O&H1&D1&+0:4]",
+  "type": "reaction"}, {"molecule": "O=C(O)C1CCC(O)CC1", "type": "building_block"}],
+  "reaction": "[C:4]-[O&H0&D2&+0:5]-[c&H0&D3&+0:1](:[c:2]):[c:3]>>O-[c&H0&D3&+0:1](:[c:2]):[c:3].[C:4]-[O&H1&D1&+0:5]",
+  "type": "reaction"}, {"molecule": "CCOC(=O)N=NC(=O)OCC", "type": "building_block"},
+  {"molecule": "CCCC1CCC(c2ccc(O)c(C=NNc3nc4ccccc4s3)c2)CC1", "reactants": [{"molecule":
+  "CCCC1CCC(c2ccc(O)c(C=O)c2)CC1", "reactants": [{"molecule": "O=Cc1cc(I)ccc1O", "type":
+  "building_block"}, {"molecule": "CCCC1CC=CCC1", "reactants": [{"molecule": "CC(=O)CC1CC=CCC1",
+  "type": "building_block"}], "reaction": "[C:2]-[C&H2&D2&+0:1]-[C:3]>>O=[C&H0&D3&+0:1](-[C:2])-[C:3]",
+  "type": "reaction"}], "reaction": "[C:4]-[C&H2&D2&+0:5]-[C&H1&D3&+0:6](-[C:7])-[c&H0&D3&+0:1](:[c:2]):[c:3]>>I-[c&H0&D3&+0:1](:[c:2]):[c:3].[C:4]-[C&H1&D2&+0:5]=[C&H1&D2&+0:6]-[C:7]",
+  "type": "reaction"}, {"molecule": "NNc1nc2ccccc2s1", "type": "building_block"}],
+  "reaction": "[#7:3]-[N&H0&D2&+0:4]=[C&H1&D2&+0:1]-[c:2]>>O=[C&H1&D2&+0:1]-[c:2].[#7:3]-[N&H2&D1&+0:4]",
+  "type": "reaction"}], "reaction": "[C:4]-[C@@&H1&D3&+0:3](-[C:5])-[C&H0&D3&+0:1](=[O&D1&H0:2])-[O&H0&D2&+0:6]-[c:7]>>C-C-O-C(=O)-N=N-[C&H0&D3&+0:1](=[O&D1&H0:2])-O-C-C.O-[C@&H1&D3&+0:3](-[C:4])-[C:5].[O&H1&D1&+0:6]-[c:7]",
+  "type": "reaction"}'
+: - 0.0
+  - 6

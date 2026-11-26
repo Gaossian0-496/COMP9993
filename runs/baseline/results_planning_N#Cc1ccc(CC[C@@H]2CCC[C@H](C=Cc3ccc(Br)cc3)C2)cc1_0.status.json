@@ -1,0 +1,30 @@
+{
+  "status": "BUDGET",
+  "termination": "llm_call_budget",
+  "passed": false,
+  "search": "aot",
+  "llm_calls": 250,
+  "llm_call_budget": 250,
+  "pass_steps": null,
+  "n_routes": 207,
+  "tree": {
+    "molecules": 213,
+    "reactions": 207,
+    "frontier": 206,
+    "solved_molecules": 33,
+    "dead": 1
+  },
+  "fix_stats": {
+    "spelling_fixed": 0,
+    "tmpl_lookups": 253,
+    "tmpl_no_reproducer": 167,
+    "spelling_fixed_after_repair": 15,
+    "tried_note_used": 117,
+    "fixB_changed": 7,
+    "tmpl_fix_changed": 26
+  },
+  "n_attempts": 1,
+  "solved_on_attempt": null,
+  "completed_at": "2026-10-12T02:09:00Z",
+  "pid": 264335
+}

@@ -33,3 +33,11 @@ venv/
 .DS_Store
 *.swp
 *~
+
+# runs/ holds the three arms reported in the paper. The patterns above would
+# otherwise swallow them, so re-include the artefacts that are small enough to
+# version. Full LLM transcripts are still excluded: see runs/README.md.
+!runs/**/*.status.json
+!runs/**/*.yaml
+!runs/**/*.jsonl
+runs/**/llm_responses_*.jsonl

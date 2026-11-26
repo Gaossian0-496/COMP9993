@@ -1,0 +1,6 @@
+? '{"molecule": "CC(=O)c1ncc(S(N)(=O)=O)s1", "reactants": [{"molecule": "CC(=O)c1nccs1",
+  "type": "building_block"}, {"molecule": "NOS(=O)(=O)O", "type": "building_block"},
+  {"molecule": "CC(C)[N-]C(C)C", "type": "building_block"}], "reaction": "[#16&a:5]:[c&H0&D3&+0:6](:[c:7])-[S&H0&D4&+0:3](-[N&H2&D1&+0:1])(=[O&H0&D1&+0:2])=[O&H0&D1&+0:4]>>C-C(-C)-[N&-&H0&D2:1]-C(-C)-C.N-[O&H0&D2&+0:2]-[S&H0&D4&+0:3](=O)(=O)-[O&H1&D1&+0:4].[#16&a:5]:[c&H1&D2&+0:6]:[c:7]",
+  "type": "reaction"}'
+: - 0.0
+  - 4

@@ -1,0 +1,21 @@
+? '{"molecule": "CCc1c(N2CC[C@@H]([C@H](C)NC(=O)OC(C)(C)C)C2)c(F)cc2cc(C(=O)O)c(=O)n(C3CC3)c12",
+  "reactants": [{"molecule": "C[C@H](NC(=O)OC(C)(C)C)[C@@H]1CCNC1", "type": "building_block"},
+  {"molecule": "CCc1c(Br)c(F)cc2cc(C(=O)O)c(=O)n(C3CC3)c12", "reactants": [{"molecule":
+  "CCc1c(Br)c(F)cc2cc(C(=O)O)c(=O)[nH]c12", "reactants": [{"molecule": "CCOC(=O)c1cc2cc(F)c(Br)c(CC)c2[nH]c1=O",
+  "reactants": [{"molecule": "CCOC(=O)c1cc2cc(F)c(Br)c(Br)c2[nH]c1=O", "reactants":
+  [{"molecule": "CCOC(=O)c1cc(N)n(-c2ccccc2F)n1", "type": "building_block"}, {"molecule":
+  "CCOC(=O)c1cc2ccc(Br)c(Br)c2[nH]c1=O", "reactants": [{"molecule": "O=C(O)c1cc2ccc(Br)c(Br)c2[nH]c1=O",
+  "reactants": [{"molecule": "O=C(O)c1cc2ccc(Br)cc2[nH]c1=O", "type": "building_block"},
+  {"molecule": "BrBr", "type": "building_block"}], "reaction": "[#7&a:2]:[c:3]:[c&H0&D3&+0:4](-[Br&H0&D1&+0:1]):[c:5]>>Br-[Br&H0&D1&+0:1].[#7&a:2]:[c:3]:[c&H1&D2&+0:4]:[c:5]",
+  "type": "reaction"}, {"molecule": "CCO", "type": "building_block"}], "reaction":
+  "[C:2]-[C&H2&D2&+0:1]-[O&H0&D2&+0:5]-[C:4]=[O&D1&H0:3]>>O-[C&H2&D2&+0:1]-[C:2].[O&D1&H0:3]=[C:4]-[O&H1&D1&+0:5]",
+  "type": "reaction"}], "reaction": "[F&H0&D1&+0:1]-[c&H0&D3&+0:3](:[c:2]):[c:4]>>C-C-O-C(=O)-c1:c:c(-N):n(-c2:c:c:c:c:c:2-[F&H0&D1&+0:1]):n:1.[c:2]:[c&H1&D2&+0:3]:[c:4]",
+  "type": "reaction"}, {"molecule": "CC", "type": "building_block"}], "reaction":
+  "[C:4]-[C&H2&D2&+0:5]-[c&H0&D3&+0:1](:[c:2]):[c:3]>>Br-[c&H0&D3&+0:1](:[c:2]):[c:3].[C:4]-[C&H3&D1&+0:5]",
+  "type": "reaction"}], "reaction": "[O&D1&H0:3]=[C:2]-[O&H1&D1&+0:1]>>C-C-[O&H0&D2&+0:1]-[C:2]=[O&D1&H0:3]",
+  "type": "reaction"}, {"molecule": "BrC1CC1", "type": "building_block"}], "reaction":
+  "[C:2]-[C&H1&D3&+0:1](-[C:3])-[n&H0&D3&+0:5](:[c:4]):[c:6]>>Br-[C&H1&D3&+0:1](-[C:2])-[C:3].[c:4]:[n&H1&D2&+0:5]:[c:6]",
+  "type": "reaction"}], "reaction": "[C:4]-[N&H0&D3&+0:5](-[C:6])-[c&H0&D3&+0:1](:[c:2]):[c:3]>>Br-[c&H0&D3&+0:1](:[c:2]):[c:3].[C:4]-[N&H1&D2&+0:5]-[C:6]",
+  "type": "reaction"}'
+: - 0.0
+  - 38

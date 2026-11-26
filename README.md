@@ -55,6 +55,10 @@ A second run of the baseline scores 80, so treat anything inside ±3 as noise.
 Raw pass rates across arms are **not** comparable unless the arms finished the same molecules.
 Compare matched per-molecule wins and losses.
 
+The run artefacts behind all three rows are in [`runs/`](runs/): per-target verdicts, route buffers
+and expansion traces, with a key to the fields in [`runs/README.md`](runs/README.md). The LLM
+transcripts are excluded for size.
+
 ## Requirements
 
 - Python 3.10 and an OpenAI-compatible inference server (tested with SGLang serving a 27B model).

@@ -1,0 +1,8 @@
+? '{"molecule": "O=C(NCCOCCOCCCCCCCl)OCCOC/C=C/CO", "reactants": [{"molecule": "O=C(Cl)OCCOC/C=C/CO",
+  "reactants": [{"molecule": "OC/C=C/CO", "type": "building_block"}, {"molecule":
+  "O=C(Cl)OCCBr", "type": "building_block"}], "reaction": "[C:2]-[C&H2&D2&+0:1]-[O&H0&D2&+0:4]-[C:3]>>Br-[C&H2&D2&+0:1]-[C:2].[C:3]-[O&H1&D1&+0:4]",
+  "type": "reaction"}, {"molecule": "NCCOCCOCCCCCCCl", "type": "building_block"}],
+  "reaction": "[#8:2]-[C&H0&D3&+0:1](=[O&D1&H0:3])-[N&H1&D2&+0:5]-[C:4]>>Cl-[C&H0&D3&+0:1](-[#8:2])=[O&D1&H0:3].[C:4]-[N&H2&D1&+0:5]",
+  "type": "reaction"}'
+: - 0.0
+  - 6

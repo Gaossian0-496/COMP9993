@@ -1,0 +1,9 @@
+? '{"molecule": "Cc1ccc(S(=O)(=O)n2ccc3c(-c4cccc(CN)c4)cc(COc4ccccc4CC(=O)O)cc32)cc1",
+  "reactants": [{"molecule": "COCOc1ccccc1CC(=O)O", "type": "building_block"}, {"molecule":
+  "Cc1ccc(S(=O)(=O)n2ccc3c(-c4cccc(CN)c4)cccc32)cc1", "reactants": [{"molecule": "Cc1ccc(S(=O)(=O)n2ccc3c(Br)cccc32)cc1",
+  "type": "building_block"}, {"molecule": "NCc1cccc(B(O)O)c1", "type": "building_block"}],
+  "reaction": "[c:5]:[c&H0&D3&+0:4](:[c:6])-[c&H0&D3&+0:1](:[c:2]):[c:3]>>Br-[c&H0&D3&+0:1](:[c:2]):[c:3].O-B(-O)-[c&H0&D3&+0:4](:[c:5]):[c:6]",
+  "type": "reaction"}], "reaction": "[#8:2]-[C&H2&D2&+0:1]-[c&H0&D3&+0:4](:[c:3]):[c:5]>>C-O-[C&H2&D2&+0:1]-[#8:2].[c:3]:[c&H1&D2&+0:4]:[c:5]",
+  "type": "reaction"}'
+: - 0.0
+  - 3

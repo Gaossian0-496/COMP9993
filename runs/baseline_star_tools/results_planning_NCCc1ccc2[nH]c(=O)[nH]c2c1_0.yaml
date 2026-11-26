@@ -1,0 +1,6 @@
+? '{"molecule": "NCCc1ccc2[nH]c(=O)[nH]c2c1", "reactants": [{"molecule": "NCCBr",
+  "type": "building_block"}, {"molecule": "O=c1[nH]c2ccccc2[nH]1", "type": "building_block"}],
+  "reaction": "[C:2]-[C&H2&D2&+0:1]-[c&H0&D3&+0:4](:[c:3]):[c:5]>>Br-[C&H2&D2&+0:1]-[C:2].[c:3]:[c&H1&D2&+0:4]:[c:5]",
+  "type": "reaction"}'
+: - 0.0
+  - 4

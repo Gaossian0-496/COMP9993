@@ -1,0 +1,9 @@
+? '{"molecule": "CC(C)(C)OC(=O)N1CCC(O)(C(N)CO[Si](C)(C)C(C)(C)C)CC1", "reactants":
+  [{"molecule": "CC(C)(O)C(N)CO[Si](C)(C)C(C)(C)C", "reactants": [{"molecule": "CC(C)(C)[Si](C)(C)OS(=O)(=O)C(F)(F)F",
+  "type": "building_block"}, {"molecule": "CC(C)(O)C(N)CO", "type": "building_block"}],
+  "reaction": "[C:2]-[#14&H0&D4&+0:1](-[C:3])(-[C:4])-[O&H0&D2&+0:6]-[C:5]>>F-C(-F)(-F)-S(=O)(=O)-O-[#14&H0&D4&+0:1](-[C:2])(-[C:3])-[C:4].[C:5]-[O&H1&D1&+0:6]",
+  "type": "reaction"}, {"molecule": "CC(C)(C)OC(=O)N1CCC(C=O)CC1", "type": "building_block"}],
+  "reaction": "[C&D1&H3:7]-[C:6](-[C&D1&H3:8])(-[C&D1&H3:9])-[#8:5]-[C:3](=[O&D1&H0:4])-[#7:2]1-[C&H2&D2&+0:1]-[C&H2&D2&+0:11]-[C:12]-[C&H2&D2&+0:13]-[C&H2&D2&+0:10]-1>>O=C-C1-C-[C&H2&D2&+0:1]-[#7:2](-[C:3](=[O&D1&H0:4])-[#8:5]-[C:6](-[C&D1&H3:7])(-[C&D1&H3:8])-[C&D1&H3:9])-[C&H2&D2&+0:10]-C-1.[C&H3&D1&+0:11]-[C:12]-[C&H3&D1&+0:13]",
+  "type": "reaction"}'
+: - 0.0
+  - 3

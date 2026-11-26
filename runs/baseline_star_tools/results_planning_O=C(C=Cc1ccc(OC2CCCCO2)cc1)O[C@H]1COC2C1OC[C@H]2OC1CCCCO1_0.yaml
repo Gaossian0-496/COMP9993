@@ -1,0 +1,19 @@
+? '{"molecule": "O=C(/C=C/c1ccc(OC2CCCCO2)cc1)O[C@H]1COC2C1OC[C@H]2OC1CCCCO1", "reactants":
+  [{"molecule": "O=C(O)/C=C/c1ccc(OC2CCCCO2)cc1", "reactants": [{"molecule": "O=C(O)/C=C/c1ccc(O)cc1",
+  "type": "building_block"}, {"molecule": "C1=COCCC1", "type": "building_block"}],
+  "reaction": "[c:8]-[O&H0&D2&+0:7]-[C&H1&D3&+0:2]1-[#8:1]-[C&H2&D2&+0:6]-[C&H2&D2&+0:5]-[C:4]-[C:3]-1>>[#8:1]1-[C&H2&D2&+0:2]-[C:3]-[C:4]-[C&H1&D2&+0:5]=[C&H1&D2&+0:6]-1.[O&H1&D1&+0:7]-[c:8]",
+  "type": "reaction"}, {"molecule": "O[C@H]1COC2C1OC[C@H]2OC1CCCCO1", "reactants":
+  [{"molecule": "OC1CCCCO1", "type": "building_block"}, {"molecule": "O[C@@H]1COC2C1OC[C@@H]2O",
+  "reactants": [{"molecule": "O[C@H]1COC([C@H]2CO2)[C@@H]1O", "reactants": [{"molecule":
+  "C1=CC([C@H]2CO2)OC1", "reactants": [{"molecule": "CC(C)=O", "type": "building_block"},
+  {"molecule": "C=CC1C=CCO1", "reactants": [{"molecule": "CC1C=CCO1", "type": "building_block"},
+  {"molecule": "C=CCBr", "type": "building_block"}], "reaction": "[C:2]-[C&H1&D2&+0:3]=[C&H2&D1&+0:1]>>Br-[C&H2&D2&+0:1]-C=C.[C:2]-[C&H3&D1&+0:3]",
+  "type": "reaction"}], "reaction": "[C:2]=[C:3]-[C:4]-[C@&H1&D3&+0:5]1-[C&H2&D2&+0:6]-[O&H0&D2&+0:1]-1>>C-C(-C)=[O&H0&D1&+0:1].[C:2]=[C:3]-[C:4]-[C&H1&D2&+0:5]=[C&H2&D1&+0:6]",
+  "type": "reaction"}, {"molecule": "O", "type": "building_block"}, {"molecule": "CS(N)(=O)=O",
+  "type": "building_block"}], "reaction": "[C:2]-[C@&H1&D3&+0:3](-[O&H1&D1&+0:1])-[C@&H1&D3&+0:4](-[C:5])-[O&H1&D1&+0:6]>>C-S(-N)(=O)=[O&H0&D1&+0:1].[C:2]/[C&H1&D2&+0:3]=[C&H1&D2&+0:4]/[C:5].[O&H2&D0&+0:6]",
+  "type": "reaction"}], "reaction": "[#8:1]-[C:2]-[C&H1&D3&+0:3](-[C:4])-[O&H0&D2&+0:5]-[C&H2&D2&+0:7]-[C:6]-[O&H1&D1&+0:8]>>[#8:1]-[C:2]-[C@&H1&D3&+0:3](-[C:4])-[O&H1&D1&+0:5].[C:6]1-[C&H2&D2&+0:7]-[O&H0&D2&+0:8]-1",
+  "type": "reaction"}], "reaction": "[C:2]-[C@&H1&D3&+0:1](-[C:3])-[O&H0&D2&+0:5]-[C:4]>>O-[C@&H1&D3&+0:1](-[C:2])-[C:3].[C:4]-[O&H1&D1&+0:5]",
+  "type": "reaction"}], "reaction": "[C:2]-[C&H0&D3&+0:1](=[O&D1&H0:3])-[O&H0&D2&+0:5]-[C:4]>>O-[C&H0&D3&+0:1](-[C:2])=[O&D1&H0:3].[C:4]-[O&H1&D1&+0:5]",
+  "type": "reaction"}'
+: - 0.0
+  - 20

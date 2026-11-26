@@ -1,0 +1,6 @@
+? '{"molecule": "FC1(F)CC2(CNCCO2)C1", "reactants": [{"molecule": "NCC1(O)CC(F)(F)C1",
+  "type": "building_block"}, {"molecule": "ClCCI", "type": "building_block"}], "reaction":
+  "[C:5]1-[C:4]-[N&H1&D2&+0:3]-[C&H2&D2&+0:1]-[C&H2&D2&+0:2]-[O&H0&D2&+0:6]-1>>Cl-[C&H2&D2&+0:1]-[C&H2&D2&+0:2]-I.[N&H2&D1&+0:3]-[C:4]-[C:5]-[O&H1&D1&+0:6]",
+  "type": "reaction"}'
+: - 0.0
+  - 3

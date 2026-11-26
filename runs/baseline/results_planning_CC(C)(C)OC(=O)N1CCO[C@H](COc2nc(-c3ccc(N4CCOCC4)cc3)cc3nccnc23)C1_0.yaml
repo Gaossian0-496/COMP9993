@@ -1,0 +1,11 @@
+? '{"molecule": "CC(C)(C)OC(=O)N1CCO[C@H](COc2nc(-c3ccc(N4CCOCC4)cc3)cc3nccnc23)C1",
+  "reactants": [{"molecule": "CC(C)(C)OC(=O)N1CCO[C@H](CBr)C1", "type": "building_block"},
+  {"molecule": "Oc1nc(-c2ccc(N3CCOCC3)cc2)cc2nccnc12", "reactants": [{"molecule":
+  "Oc1nc(Cl)cc2nccnc12", "reactants": [{"molecule": "N#Cc1cccnc1Cl", "type": "building_block"},
+  {"molecule": "Oc1nccc2nccnc12", "type": "building_block"}], "reaction": "[#7&a:2]:[c&H0&D3&+0:3](-[Cl&H0&D1&+0:1]):[c:4]>>N#C-c1:c:c:c:n:c:1-[Cl&H0&D1&+0:1].[#7&a:2]:[c&H1&D2&+0:3]:[c:4]",
+  "type": "reaction"}, {"molecule": "OB(O)c1ccc(N2CCOCC2)cc1", "type": "building_block"}],
+  "reaction": "[#7&a:2]:[c&H0&D3&+0:1](:[c:3])-[c&H0&D3&+0:4](:[c:5]):[c:6]>>Cl-[c&H0&D3&+0:1](:[#7&a:2]):[c:3].O-B(-O)-[c&H0&D3&+0:4](:[c:5]):[c:6]",
+  "type": "reaction"}], "reaction": "[C:2]-[C&H2&D2&+0:1]-[O&H0&D2&+0:3]-[c:4]>>Br-[C&H2&D2&+0:1]-[C:2].[O&H1&D1&+0:3]-[c:4]",
+  "type": "reaction"}'
+: - 0.0
+  - 13
