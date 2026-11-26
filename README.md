@@ -39,22 +39,28 @@ Two design points that came from getting it wrong first:
 100 hard targets, 250 LLM calls per target, compared per-molecule head-to-head against the same
 baseline on the same targets.
 
-| Arm | Solved |
-|---|---|
-| Baseline (no tools) | 83 / 100 |
-| Tool-disconnection (`cut_tool` only, no skills) | **96 / 100** |
-| Tool-all (this config) | 92 / 92 finished |
+| Arm | Solved | Matched vs baseline |
+|---|---|---|
+| Baseline (no tools) | 83 / 100 | — |
+| Baseline, second run | 80 / 100 | the noise floor, ±3 |
+| Tool-disconnection (`cut_tool` only, no skills) | **96 / 100** | 13 W / 0 L, **+13** |
+| Tool-all (this config) | **96 / 100** | 13 W / 0 L, **+13** |
 
-The headline comparison is tool-disconnection against the baseline: **+13, with no losses** on a
-matched per-molecule basis. That arm carries no skill library at all, so the gain is attributable to
-the tool.
+Both tool arms land on the same figure. The cleaner attribution is tool-disconnection, which carries
+no skill library at all, so its **+13 with no losses** is the gain from a single tool. Tool-all adds
+the remaining four tools and the skill path and does not improve on it.
+
+A second run of the baseline scores 80, so treat anything inside ±3 as noise.
 
 Raw pass rates across arms are **not** comparable unless the arms finished the same molecules.
 Compare matched per-molecule wins and losses.
 
 ## Requirements
 
-- Python 3.10, RDKit, an OpenAI-compatible inference server (tested with SGLang serving a 27B model)
+- Python 3.10 and an OpenAI-compatible inference server (tested with SGLang serving a 27B model).
+  `pip install -r requirements.txt` for the Python side. The versions there are pinned rather than
+  floated because RDKit and rdchiral change template matching between releases, which changes which
+  steps the oracle accepts.
 - **`scscore/`** — `optimizer.py` imports `scscore.scscore.standalone_model_numpy` at import time.
   Not vendored here (it is a third-party model of several hundred MB). Obtain it from the SCScore
   project and place it at the repository root, or the package will not import.
@@ -63,7 +69,7 @@ Compare matched per-molecule wins and losses.
 - **A skill library** — `examples/config_tool_all.yaml` sets `skill_library: skill_library_pg_v2.json`.
   That file is **not** in this repository. Either supply one of that name, or set `skill_repair` and
   `skill_gate` to false and `skill_library` to null, which runs the tool arm without the skill path.
-  The headline result above was produced without any skill library.
+  The tool-disconnection row above was produced without any skill library.
 
 ## Running it
 
@@ -130,6 +136,11 @@ it is required even with the skill path switched off.
   and off; the arms are not part of this distribution.
 - **Run outputs, datasets, models, skill stores.** Reproducible from the code, or third-party, or
   far too large.
+
+## Licence
+
+MIT, in `LICENSE`, carrying the upstream copyright of LLM-Syn-Planner (Copyright (c) 2025 Haorui
+Wang) alongside this work's.
 
 ## Provenance
 
